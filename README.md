@@ -49,3 +49,22 @@ pip install -r requirements.txt
 ```bash
 python -m unittest
 ```
+
+5. How to use the DIContainer with `register` and `resolve`.
+
+```python
+container = DIContainer()
+container.register(DatabaseService)
+container.register(PaymentService)
+container.register(NotificationService)
+
+# Resolve instances from the container
+db_service = container.resolve(DatabaseService)
+payment_service = container.resolve(PaymentService)  # Get the payment service instance
+notification_service = container.resolve(NotificationService)  # Get the notification service instance
+
+# Use the resolved instances
+db_service.fetch_data()
+payment_service.process_payment(100)
+notification_service.send_notification("Payment successful")
+```
