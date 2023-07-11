@@ -21,8 +21,8 @@ The objective of this project is to develop a custom DI framework from scratch a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/custom-di-framework.git
-cd custom-di-framework
+git clone https://github.com/jayanthns/di-framework-example.git
+cd di-framework-example
 ```
 
 2. Create a virtualenvironment
